@@ -21,15 +21,9 @@ blockquote {
 
 /*chipnav*/
 a {
-  color:#FFF;
+  color: #4fdbb2;
   cursor: pointer !important;
   pointer-events: auto;
-}
-
-.about-img-shadow {
-  box-shadow: 0px 1px 30px rgba(121, 107, 93, 0.35);
-  border-radius: 8px;
-  padding: 0px !important;
 }
 
 .card-hover:hover {
@@ -67,9 +61,6 @@ a {
   background-color: #000;
   max-width: 200px;
   padding: 20px;
-  border: solid;
-  border-width: thick;
-  border-color: #FFF;
 }
 
 bg intro h2{
@@ -91,6 +82,10 @@ nav.navbar{
 
 nav.navbar.transparent {
   background-color:rgba(0,0,0,0);
+}
+
+nav a{
+  color: #000;
 }
 
 nav ul li a {
@@ -123,6 +118,16 @@ nav ul li a {
 h5  {
   margin-bottom: 0px;
   font-weight: 500;
+}
+
+.collection{
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.collection .collection-item {
+  background-color: transparent !important;
+  border: none !important;
 }
 
 .underline {
