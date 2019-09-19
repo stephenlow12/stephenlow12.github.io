@@ -3,13 +3,27 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <meta property="og:site_name" content="Stephen Low — Product Designer"/>
+  <meta property="og:site_name" content="Stephen Low — Product Designer Portfolio"/>
   <meta property="og:title" content="Stephen Low"/>
   <meta property="og:image" content="../img/Logo.png"/>
   <meta property="og:type" content="portfolio"/>
 
   <link rel="icon" href="img/Logo.png">
-  <title>Stephen Low — Experience Designer</title>
+  <title>Stephen Low — Product Designer Portfolio</title>
+  <meta property="og:url" content="http://stephenlow.ca"/>
+  <meta property="og:description" content="I'm Stephen Low, Toronto-minded product designer with focus on User Experience and Interaction Design for digital products. I'm also a recent graduate from OCAD University's Industrial Design program."/>
+  <meta itemprop="name" content="Stephen Low"/>
+  <meta itemprop="url" content="http://stephenlow.ca"/>
+  <meta itemprop="description" content="I'm Stephen Low, Toronto-minded product designer with focus on User Experience and Interaction Design for digital products. I'm also a recent graduate from OCAD University's Industrial Design program."/>
+  <meta itemprop="thumbnailUrl" content="https://stephenlow.ca/img/banana-boat.jpg"/>
+  <link rel="image_src" href="https://stephenlow.ca/img/banana-boat.jpg" />
+  <meta itemprop="image" content="https://stephenlow.ca/img/banana-boat.jpg"/>
+  <meta name="twitter:title" content="Stephen Low"/>
+  <meta name="twitter:image" content="https://stephenlow.ca/img/banana-boat.jpg"/>
+  <meta name="twitter:url" content="http://stephenlow.ca"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:description" content="I'm Stephen Low, Toronto-minded product designer with focus on User Experience and Interaction Design for digital products. I'm also a recent graduate from OCAD University's Industrial Design program."/>
+  <meta name="description" content="I'm Stephen Low, Toronto-minded product designer with focus on User Experience and Interaction Design for digital products. I'm also a recent graduate from OCAD University's Industrial Design program."/>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -20,26 +34,26 @@
 
 </head>
 <body>
- <div class="navbar-fixed">
+    <!-- Fixed navbar -->
+   <div class="navbar-fixed container">
     <nav>
       <div class="nav-wrapper">
         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i>
         </a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
-          <li><a href="#scroll-to-work">work</a></li>
+          <li><a href="index.html#scroll-to-work">work</a></li>
           <li><a href="about.html">about</a></li>
-          <li><a  href="Stephenlow.pdf" target="_blank">resume</a></li>
+          <li><a href="Stephenlow.pdf" target="_blank">resume</a></li>
         </ul>
       </div>
     </nav>
   </div>
-  <div class="container">
-    <ul class="sidenav" id="slide-out">
-      <li><a href="#scroll-to-work">work</a></li>
-      <li><a href="about.html">about</a></li>
-      <li><a href="Stephenlow.pdf" target="_blank">resume</a></li>
-    </ul>
-  </div>
+  <ul class="sidenav" id="slide-out">
+    <li><a href="index.html#scroll-to-work">work</a></li>
+    <li><a href="about.html">about</a></li>
+    <li><a href="Stephenlow.pdf" target="_blank">resume</a></li>
+  </ul>
+    <!-- Fixed navbar end -->
   <div class="bg">
     <div class="container">
       <!-- Page title-->
@@ -63,12 +77,12 @@
     <blockquote>
     	<p class="middle-align xxx-large-text">
 
-    	Hi! I'm a research-minded Product Designer from Toronto and a recent graduate from OCAD University's Industrial Design program. I'm passionate about all lanes of the design process, and building products that keeps the user at the center of the journey. I'm currently looking for new opportunities.
+    	I'm a Product Designer from Toronto and a recent graduate from OCAD University's Industrial Design program. I'm passionate about all lanes of the design process, and building products that keeps the user at the center of the journey. I'm currently looking for new opportunities.
     	</p>
     </blockquote>
 
     <!-- spacer -->
-    <div class="spacer" id="scroll-to-work"></div>
+    <div class="spacer section scrollspy" id="scroll-to-work"></div>
 
     <!-- Section heading -->
     <div class="center-align"
@@ -93,12 +107,13 @@
           <br><br>
 
           <p class="left-align large-text">
-            <span class="xxx-large-text">Student Experience Design (SXD) Lab<br></span>
+            <span class="xxx-large-text">SXD Lab<br></span>
             Enhancing the post-secondary educational journey for northern and remote online learners.
           </p>
 
           <div class="chip left">Product Discovery</div>
           <div class="chip left">User Research</div>
+          <div class="chip left">Prototyping</div>
 
         </div>
      </div>
@@ -235,6 +250,13 @@
   <script>
   $(document).ready(function(){
     $('.sidenav').sidenav();
+  });
+  </script>
+
+  <!-- JS for smooth-scroll-->
+  <script>
+  $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
   });
   </script>
 
